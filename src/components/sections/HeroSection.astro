@@ -6,11 +6,11 @@ import LinkIcons from '../LinkIcons.astro';
 ---
 <section id="home" class="h-screen w-screen p-12 flex justify-around" >
     <div class="md:w-3/5 md:h-full bg-[url('/img/hero.jpeg')] bg-left-top bg-no-repeat bg-cover">
-        <Image class="relative top-12 left-12 h-40 w-40" src={darkLogo} alt="AGROAI logo">
+        <img class="relative top-12 left-12 h-40 w-40" src="/img/logo_white.png" alt="AGROAI logo">
     </div>
     <div class="flex flex-col items-end justify-between">
         <ul class="flex gap-12 text-stone-600 text-2xl font-bold">
-            <li class="block md:hidden"><Image class="h-8 w-8" src={whiteLogo} alt="AGROAI logo"></Image></li>
+            <li class="block md:hidden"><img class="h-8 w-8" src="/img/logo_dark.png" alt="AGROAI logo"></li>
             <li class="hidden md:block"><a href="#home">Home</a></li>
             <li><a href="#tokenomics">Tokenomics</a></li>
             <li><a href="#farms">Farms</a></li>
