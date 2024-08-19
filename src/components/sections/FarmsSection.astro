@@ -7,31 +7,30 @@ import LinkIcons from '../LinkIcons.astro';
         <li><a href="#tokenomics">Tokenomics</a></li>
         <li><a href="#farms">Farms</a></li>
     </ul>
-    <div class="flex md:flex-row flex-col items-center justify-between md:p-12 p-4">
+    <div class="flex md:flex-row gap-8 md:gap-0 flex-col items-center justify-between md:p-12 p-4">
         <div class="md:w-3/5 text-center">
             <p class="md:text-4xl text-xl leading-10 text-stone-600">Our bot provides real-time updates on the best farming pairs and APRs using a secure algorithm.<br/> 
             We source top pairs from various protocols and chains, prioritizing stablecoin farming for safety and sustainability.<br/> 
             A degen section for ultra-high APRs is also in the works.</p>
         </div>
-        <div class="hidden md:block text-start">
+        <div class="text-start">
             <h2 class="md:text-4xl text-xl font-bold text-stone-600">Farming available on:</h2>
-            <ul class="md:text-2xl text-md text-stone-500 leading-8 italic">
-                <li>Uniswap V3</li>
-                <li>Beefy</li>
-                <li>PancakeSwap</li>
-                <li>Thena</li>
-                <li>Solend</li>
-                <li>Compound</li>
-                <li>Yearn V2</li>
-                <li>Iron Bank</li>
-                <li>Youves</li>
-                <li>Quipuswap</li>
+            <ul class="md:text-2xl text-md text-stone-500 flex flex-col flex-start gap-1 leading-8 italic">
+                <li class="flex items-center gap-1"><img src="https://assets.coingecko.com/coins/images/12504/small/uniswap-uni.png?1600306604" class="h-8">Uniswap V3</li>
+                <li class="flex items-center gap-1"><img src="https://app.beefy.com/assets/BIFI-37d31208.png" class="h-8">Beefy</li>
+                <li class="flex items-center gap-1"><img src="https://assets.coingecko.com/coins/images/12632/standard/pancakeswap-cake-logo_%281%29.png?1696512440" class="h-8">PancakeSwap</li>
+                <li class="flex items-center gap-1"><img src="https://assets.coingecko.com/coins/images/28864/standard/Symbol-Color200x200.png?1706810126" class="h-8">Thena</li>
+                <li class="flex items-center gap-1"><img src="https://www.geckoterminal.com/_next/image?url=https%3A%2F%2Fcoin-images.coingecko.com%2Fcoins%2Fimages%2F19573%2Fsmall%2Fsave.jpg%3F1721991261&w=64&q=75" class="h-8">Solend</li>
+                <li class="flex items-center gap-1"><img src="https://assets.coingecko.com/coins/images/10775/standard/COMP.png?1696510737" class="h-8">Compound</li>
+                <li class="flex items-center gap-1"><img src="https://assets.coingecko.com/coins/images/15152/standard/yvBOOST.png?1696514808" class="h-8">Yearn V2</li>
+                <li class="flex items-center gap-1"><img src="https://assets.coingecko.com/coins/images/22902/standard/ironbank.png?1696522198" class="h-8">Iron Bank</li>
+                <li class="flex items-center gap-1"><img src="https://assets.coingecko.com/coins/images/19171/standard/YOU_Youves.png?1696518620" class="h-8">Youves</li>
             </ul>
         </div>
     </div>
     <div class="flex md:flex-row flex-col md:items-end items-center justify-between ">
         <div class="md:block hidden w-1/3">
-            <img class="h-32 w-32" src="/img/logo_dark.png" alt="AGROAI logo">
+            <div class="h-32 w-32 bg-[url('/svgs/logo_dark.svg')] bg-no-repeat bg-center bg-cover"></div>
         </div>
         <p class="text-sm">AgroAI 2024™️</p>
         <div class="md:w-1/3">

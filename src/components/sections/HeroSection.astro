@@ -2,12 +2,12 @@
 import LinkIcons from '../LinkIcons.astro';
 ---
 <section id="home" class="h-screen w-screen md:p-12 p-4 flex justify-around snap-center" >
-    <div class="md:w-3/5 md:h-full bg-[url('/img/hero.jpeg')] bg-left-top bg-no-repeat bg-cover">
-        <img class="relative top-12 left-12 h-40 w-40" src="/img/logo_white.png" alt="AGROAI logo">
+    <div class="md:w-3/5 hidden md:block md:h-full bg-[url('/img/hero.jpeg')] bg-left-top bg-no-repeat bg-cover">
+        <div class="relative top-12 left-12 h-40 w-40 bg-[url('/svgs/logo_white.svg')] bg-no-repeat bg-center bg-cover"></div>
     </div>
     <div class="flex flex-col items-center md:items-end justify-between">
         <ul class="flex gap-12 text-stone-600 text-2xl font-bold">
-            <li class="block md:hidden"><img class="h-24 w-24" src="/img/logo_white.png" alt="AGROAI logo"></li>
+            <li class="block md:hidden"><div class="h-24 w-24 bg-[url('/svgs/logo_white.svg')] bg-no-repeat bg-center bg-cover"></div></li>
             <li class="hidden md:block"><a href="#home">Home</a></li>
             <li><a href="#tokenomics">Tokenomics</a></li>
             <li><a href="#farms">Farms</a></li>
@@ -25,7 +25,7 @@ import LinkIcons from '../LinkIcons.astro';
         </div>
         <div class="self-center text-center text-stone-600">
             <p>Contract Address:</p>
-            <p>0x1234567890123456789012345678901234567890</p>
+            <p>0x2aD834eEeeb79Ced4e9f344FC90B73494dcB9EDe</p>
             <LinkIcons dark={true} />
         </div>
 </section>
