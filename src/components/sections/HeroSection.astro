@@ -1,15 +1,17 @@
 ---
+import { Image } from 'astro:assets';
+import whiteLogo from '../../../public/img/logo_white.png';
 import LinkIcons from '../LinkIcons.astro';
 ---
-<section class="h-screen w-screen p-12 flex justify-around" >
+<section id="home" class="h-screen w-screen p-12 flex justify-around" >
     <div class="md:w-3/5 md:h-full bg-[url('/img/hero.jpeg')] bg-left-top bg-no-repeat bg-cover">
-        <img class="relative top-12 left-12 h-40 w-40" src="/img/logo_white.png" alt="AGROAI logo">
+        <Image class="relative top-12 left-12 h-40 w-40" src={whiteLogo} alt="AGROAI logo">
     </div>
     <div class="flex flex-col items-end justify-between">
         <ul class="flex gap-12 text-stone-600 text-2xl font-bold">
-            <li>Home</li>
-            <li>Tokenomics</li>
-            <li>Farms</li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#tokenomics">Tokenomics</a></li>
+            <li><a href="#farms">Farms</a></li>
         </ul>
         <div class="flex flex-col items-end justify-between gap-12">
             <div class="text-end">
@@ -18,7 +20,7 @@ import LinkIcons from '../LinkIcons.astro';
             </div>
             <div class="text-end text-stone-500 text-2xl leading-8">
                 <p>Unlock the true potential of yield farming with</p>
-                <a>our Telegram bot.</a>
+                <a href="https://t.me/agroaifarmbot" class="underline">our Telegram bot.</a>
                 <p>Join us in making Farming great again.</p>
             </div>
         </div>
