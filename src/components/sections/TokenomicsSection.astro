@@ -1,10 +1,8 @@
 ---
 import LinkIcons from '../LinkIcons.astro';
-import { Image } from 'astro:assets';
-import whiteLogo from '../../../public/img/logo_white.png';
 ---
 <section id="tokenomics" class="h-screen w-screen md:p-12" >
-    <div class="h-full w-full flex flex-col justify-between bg-[url('/img/hero.jpeg')] opacity-70 bg-[50%] bg-[length:150%_150%] p-12">
+    <div class="h-full w-full flex flex-col justify-between md:bg-[url('/img/hero.jpeg')] opacity-70 bg-[50%] bg-[length:150%_150%] p-12">
         <ul class="flex gap-16 text-white text-2xl font-bold">
             <li><a href="/">Home</a></li>
             <li><a href="#tokenomics">Tokenomics</a></li>
@@ -35,7 +33,7 @@ import whiteLogo from '../../../public/img/logo_white.png';
             </div>
         </div>
         <div class="flex w-full justify-between items-center self-center">
-            <Image class="md:block hidden h-32 w-32 opacity-70" src={whiteLogo} alt="AGROAI logo">
+            <img class="md:block hidden h-32 w-32 opacity-70" src="/img/logo_dark.png" alt="AGROAI logo">
             <div>
                 <LinkIcons />
             </div>
